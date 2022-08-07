@@ -30,6 +30,10 @@ const hello = fun({ nisse: 'string' }, ({ nisse }) => {
   console.log({ nisse })
 })
 
+// Throws exception, nisse has to be a string
+hello({ nisse: 1 })
+
+// This works
 hello({ nisse: 'hello' })
 ```
 
