@@ -7,7 +7,7 @@ Self defined types using Javascript functions are extremely versatile and powerf
 ### Usage
 
 Define your types in `./types.js`
-```
+```js
 const types = {}
 
 types.string = function (value) {
@@ -23,7 +23,7 @@ module.exports = types
 
 Include `fun.js` and run the app:
 
-```
+```js
 require('./fun.js')
 
 const hello = fun({ nisse: 'string' }, ({ nisse }) => {
@@ -33,7 +33,7 @@ const hello = fun({ nisse: 'string' }, ({ nisse }) => {
 hello({ nisse: 'hello' })
 ```
 
-The function `hello` will crash if the passed arguments are of the wrong type.
+The function `hello` will crash if the passed arguments are of the wrong type, or if they aren't defined.
 
 Now could we add editor support for this to check the type before we save the file?
 
