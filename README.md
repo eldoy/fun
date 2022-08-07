@@ -1,6 +1,6 @@
 # Fun.js
 
-Functional typed Javascript experiment that shows how you could write total pure functions with runtime type checking against self defined types.
+This functional typed Javascript experiment that shows how you could write total pure functions with runtime type checking against self defined types.
 
 Self defined types using Javascript functions are extremely versatile and powerful as they can literally be anything you want, and is not limited to your language.
 
