@@ -1,6 +1,6 @@
 const types = require('./types.js')
 
-// Use this global function to
+// Use this global function to create typed functions
 global.fun = function (params, callback) {
   for (const name in params) {
     const type = params[name]
