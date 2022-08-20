@@ -80,3 +80,20 @@ if (err) {
 }
 
 console.log('Do normal stuff with', result)
+
+// Simplest is always name variables
+// Create functions that prevents runtime errors
+const [result2, err2] = fun({ a: 'string' }, 'string[]', (a) => {
+  console.log(a)
+  // This error is caught in 'fun'
+  throw Error('something bad')
+  return 'hello'
+})
+
+// or with string?
+const [result3, err3] = fun('a: string, b: number -> [string, string]', (a) => {
+  console.log(a)
+  // This error is caught in 'fun'
+  throw Error('something bad')
+  return 'hello'
+})
