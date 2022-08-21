@@ -48,6 +48,9 @@ so we call functions like this:
 app.someFunction()
 page.somePageFunction()
 
+use state like this:
+page.state.units
+page.state.units = units
 
-
+app.state.email
 */
