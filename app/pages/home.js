@@ -27,3 +27,27 @@ module.exports = async function ({ db }) {
     ]
   )
 }
+
+/* Concept:
+4 (or maybe just 3) layers:
+0. $ - Haka or similar
+  - functions for manipulation of DOM and elements
+1. app functions and state, exists through all pages
+  - must be persisted through localStorage, sessionStorage or cookie
+2. page functions and state
+  - exists only on the current page, is not persisted
+  - uses sessionStorage
+3. layout functions and state (how is this different from app?)
+  - may not be necessary, but can have functions for the current layout only
+    - dialog close and open
+    - store paths
+    - things to register for every page
+
+so we call functions like this:
+
+app.someFunction()
+page.somePageFunction()
+
+
+
+*/
